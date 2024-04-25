@@ -86,23 +86,23 @@ button {
 }
 
 ul li:hover .botao-excluir {
-    opacity: 1; /* Torna visível quando o item da lista é passado pelo mouse */
+    opacity: 1;
 }
 
 ul {
     display: flex;
-    flex-direction: column; /* faz os itens da lista ficarem em coluna */
+    flex-direction: column;
     width: 100%;
 }
 
 ul li:hover {
-    background-color: #eaeaea; /* Altera a cor de fundo ao passar o mouse */
+    background-color: #eaeaea;
 }
 
 ul li {
-    width: 100%; /* faz cada item da lista ocupar toda a largura */
+    width: 100%;
     list-style: none;
-    margin-bottom: 10px; /* adiciona um espaço entre os itens da lista */
+    margin-bottom: 10px;
 }
 
 .conteudo-tarefa {
@@ -112,5 +112,5 @@ ul li {
 
 .container:hover .titulo-tarefa,
 .container:hover .descricao-tarefa {
-    text-decoration: line-through; /* adiciona o risco no texto ao passar o mouse */
+    text-decoration: line-through;
 }
