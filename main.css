@@ -1,0 +1,116 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'roboto', sans-serif;
+}
+
+header {
+    background-color: #5f27cd;
+    padding: 16px 0;
+    color: #fff;
+    display: flex;
+    border-bottom: 16px solid #341f97;
+    justify-content: center;
+    text-transform: uppercase;
+    font-style: italic;
+}
+
+header button {
+    margin-left: 16px;
+}
+
+form {
+    background-color: #c8d6e5;
+    padding: 24px 0;
+    text-align: center;
+    display: none;
+}
+
+from h2 {
+    margin-bottom: 16px;
+}
+
+input, button {
+    padding: 8px;
+}
+
+button {
+    background-color: #009432;
+    border: none;
+    font-weight: bold;
+    text-transform: uppercase;
+    color: #fff;
+    cursor: pointer;
+    border-radius: 10px;
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    max-width: 100%;
+    width: 100%;
+    border: none;
+    padding: 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    margin: 10px;
+    border-radius: 8px;
+    background: #f7f7f7;
+    transition: transform 0.2s;
+}
+
+.container:hover {
+    transform: translateY(-2px);
+}
+
+.titulo-tarefa, .descricao-tarefa {
+    width: 100%;
+    text-align: center;
+    margin: 5px 0;
+}
+
+#botao-cancelar {
+    background-color: red;
+}
+
+.botao-excluir {
+    background-color: red;
+    color: white;
+    margin-left: auto;
+    margin-top: 10px;
+    border: none;
+    cursor: pointer;
+    opacity: 0;
+    border-radius: 4px;
+}
+
+ul li:hover .botao-excluir {
+    opacity: 1; /* Torna visível quando o item da lista é passado pelo mouse */
+}
+
+ul {
+    display: flex;
+    flex-direction: column; /* faz os itens da lista ficarem em coluna */
+    width: 100%;
+}
+
+ul li:hover {
+    background-color: #eaeaea; /* Altera a cor de fundo ao passar o mouse */
+}
+
+ul li {
+    width: 100%; /* faz cada item da lista ocupar toda a largura */
+    list-style: none;
+    margin-bottom: 10px; /* adiciona um espaço entre os itens da lista */
+}
+
+.conteudo-tarefa {
+    text-align: center;
+    width: 100%;
+}
+
+.container:hover .titulo-tarefa,
+.container:hover .descricao-tarefa {
+    text-decoration: line-through; /* adiciona o risco no texto ao passar o mouse */
+}
